@@ -39,7 +39,7 @@
           <a href="#" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a>
         </li>
         <li>
-          <a class="nav-link scrollto" id="buttonLogin"><i class="bx bx-user-plus"></i><span>Registrar</span></a>
+          <a href="#" class="nav-link scrollto" id="buttonLogin"><i class="bx bx-user-plus"></i><span>Registrar</span></a>
         </li>
         <li>
           <a href="#" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Nosotros</span></a>
@@ -69,15 +69,23 @@
             <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Perez" required>
           </div>
           <div class="col-md-4">
+            <label for="validationServer03" class="form-label">Celular</label>
+            <input type="text" class="form-control is-valid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+            <div id="validationServer03Feedback" class="invalid-feedback">
+              Ingrese un número de contacto.
+            </div>
+          </div>
+          <div class="col-md-8">
             <label for="validationServerUsername" class="form-label">Email</label>
             <div class="input-group has-validation">
               <span class="input-group-text" id="inputGroupPrepend3">@</span>
-              <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="ejemplo@mail.com"   aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+              <input type="text" class="form-control is-valid" id="validationServerUsername" placeholder="ejemplo@mail.com"   aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
               <div id="validationServerUsernameFeedback" class="invalid-feedback">
                 Ingrese un email valido.
               </div>
             </div>
           </div>
+
           <div class="col-12">
             <div class="form-check">
               <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
