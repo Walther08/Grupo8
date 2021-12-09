@@ -9,30 +9,30 @@
         </div> 
         <br>
         <br>
-        <form class="col-md-6 needs-validation">
+        <form [formGroup]="fgValidator" (ngSubmit)="EnviarPersona()" class="col-md-6">
             <div class="form-group">
               <label for="nombresInput">Nombres</label>
-              <input type="text" class="form-control" id="nombres" placeholder="Ingrese nombres" required>
+              <input formControlName="nombres" type="text" class="form-control" id="nombres" placeholder="Ingrese nombres" required>
             </div>
             <div class="form-group">
                 <label for="apellidosInput">Apellidos</label>
-                <input type="text" class="form-control" id="apellidos" placeholder="Ingrese apellidos" required>
+                <input formControlName="apellidos" type="text" class="form-control" id="apellidos" placeholder="Ingrese apellidos" required>
             </div>
             <div class="form-group">
                 <label for="correoInput">Correo</label>
-                <input type="email" class="form-control" id="correo" aria-describedby="correoHelp" placeholder="Ingrese correo" required>
+                <input formControlName="correo" type="text" class="form-control" id="correo" aria-describedby="correoHelp" placeholder="Ingrese correo" required>
                 <small id="correoHelp" class="form-text text-muted">Nunca compartas tu email con cualquier persona.</small>
             </div>
             <div class="form-group">
                 <label for="celularInput">Celular</label>
-                <input type="text" class="form-control" id="celular" placeholder="Ingrese celular">
+                <input formControlName="celular" type="text" class="form-control" id="celular" placeholder="Ingrese celular">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              <input formControlName="clave" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input [disabled]="!fgValidator.valid" type="submit" value="Registrarse" class="btn btn-primary" >
           </form>
     </div>
 </section>

@@ -10,6 +10,7 @@ import { CrearProductoComponent } from './productos/crear-producto/crear-product
 import { BuscarProductoComponent } from './productos/buscar-producto/buscar-producto.component';
 import { EliminarProductoComponent } from './productos/eliminar-producto/eliminar-producto.component';
 import { ActualizarProductoComponent } from './productos/actualizar-producto/actualizar-producto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { ActualizarProductoComponent } from './productos/actualizar-producto/act
   ],
   imports: [
     CommonModule,
-    AdministracionRoutingModule
+    AdministracionRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdministracionModule { }
