@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "611e4e2d-da55-4777-b766-bdb6cc19a7a6"
+    "analytics": "ca1bd040-02c9-48de-b046-69aa58611043"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -30,11 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/materialize-css/dist/css/materialize.min.css"
+              
             ],
             "scripts": [
-              "node_modules/materialize-css/dist/js/materialize.min.js"
+              
             ]
           },
           "configurations": {
