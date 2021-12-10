@@ -10,18 +10,21 @@ import { EditarProductoComponent } from './productos/editar-producto/editar-prod
 import { EliminarProductoComponent } from './productos/eliminar-producto/eliminar-producto.component';
 
 const routes: Routes = [
-
   {
-    path:"crear",
-    component: CrearPersonaComponent
+    path:"personas",
+    component:BuscarPersonaComponent
   },
   {
-    path:"eliminar",
-    component: EliminarPersonaComponent
+    path:"productos",
+    component:BuscarProductoComponent
   },
   {
-    path:"buscar",
-    component: BuscarPersonaComponent
+    path:"personas/crear",
+    component:CrearPersonaComponent
+  },
+  {
+    path:"personas/buscar",
+    component:BuscarPersonaComponent
   },
   {
     path:"editar",
