@@ -1,0 +1,33 @@
+.titleMenuCrearProducto{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: chocolate;
+}
+.menu{
+    margin-left: auto;
+    border: solid;
+    border-radius: 1%;
+    padding: 5px;
+    
+}
+.imgCrearProducto{
+    margin-left: 45%;
+    height: 100px;
+    width: 100px;
+
+    
+}
+.campos{
+    margin-left: 10%;
+}
+.sizeLabel{
+    width: 700px;
+}
+.botonGuardarProducto{
+    width:100%; 
+    background-color: lightgreen;
+    width: 150px;
+    margin-left: 45%;
+
+}
