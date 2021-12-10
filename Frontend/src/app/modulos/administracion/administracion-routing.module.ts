@@ -28,11 +28,7 @@ const routes: Routes = [
     component:BuscarPersonaComponent
   },
   {
-<<<<<<< HEAD
-    path:"personas/editar-persona",
-=======
     path:"personas/editar/:id",
->>>>>>> d0e50d10c53a519768e61f40c88443177c228c71
     component: EditarPersonaComponent
   },
   {
