@@ -19,6 +19,18 @@ export class AdministracionService {
       });
   }
 
+  EditarPersona(persona:ModeloPersona):Observable<ModeloPersona>
+  {
+    return this.http.post("http://localhost:3000/personas",persona,
+      {
+        headers: new HttpHeaders({})
+      });
+  }
+
+  ConsultaPersonaPorId(id:string):Observable<ModeloPersona>{
+    return this.http.get<ModeloPersona>(`http://localhost:3000/personas/${id}`)
+  }
+
   ObtenerRegistrosPersona():Observable<ModeloPersona[]>{
     return this.http.get<ModeloPersona[]>("http://localhost:3000/personas");
   }
