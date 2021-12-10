@@ -45,7 +45,6 @@ export class EditarPersonaComponent implements OnInit {
     editarPersona.correo = correoPersona;
     editarPersona.celular = celularPersona;
     editarPersona.clave = clavePersona;
-
     editarPersona.id=this.id;
 
       this.servicioAdministracion.EditarPersona(editarPersona).subscribe((datos:ModeloPersona)=>{
@@ -61,7 +60,8 @@ export class EditarPersonaComponent implements OnInit {
       this.fgValidator.controls['nombres'].setValue(datos.nombres);
       this.fgValidator.controls['apellidos'].setValue(datos.apellidos);
       this.fgValidator.controls['correo'].setValue(datos.correo);
-      this.fgValidator.controls['clave'].setValue(datos.id);
+      this.fgValidator.controls['celular'].setValue(datos.celular);
+
     },(error:any)=>{
       alert("La persona no existe");
     })
