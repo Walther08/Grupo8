@@ -10,8 +10,9 @@ import { ErrorComponent } from './plantilla/error/error.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxCaptchaModule } from 'ngx-captcha';
-import { ContactoComponent } from './plantilla/contacto/contacto/contacto.component';
-import { PortafolioComponent } from './plantilla/portafolio/portafolio/portafolio.component';
+import { ContactoComponent } from './plantilla/contacto/contacto.component';
+import { PorfatolioComponent } from './plantilla/porfatolio/porfatolio.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { PortafolioComponent } from './plantilla/portafolio/portafolio/portafoli
     InicioComponent,
     ErrorComponent,
     ContactoComponent,
-    PortafolioComponent
+    PorfatolioComponent,
   ],
   imports: [
     BrowserModule,
