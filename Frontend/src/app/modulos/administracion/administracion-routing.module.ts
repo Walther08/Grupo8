@@ -27,8 +27,12 @@ const routes: Routes = [
     component:BuscarPersonaComponent
   },
   {
-    path:"editar",
+    path:"personas/editar/:id",
     component: EditarPersonaComponent
+  },
+  {
+    path:"personas/eliminar/:id",
+    component: EliminarPersonaComponent
   },
   {
     path:"buscar-producto",
