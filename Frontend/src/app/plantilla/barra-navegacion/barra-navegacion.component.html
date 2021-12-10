@@ -10,12 +10,12 @@
         <a routerLink="/inicio" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a>
       </li>
 
-      <li>
+      <li *ngIf ="!sesionIniciada">
         <a routerLink="/seguridad/identificar" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Ingresar</span></a>
       </li>
 
       <li *ngIf ="sesionIniciada">
-        <a routerLink="/administracion/personas" class="nav-link scrollto" id="buttonLogin"><i class="bx bx-cog"></i><span>Administrar|Personas</span></a>
+        <a routerLink="/administracion/crear" class="nav-link scrollto" id="buttonLogin"><i class="bx bx-cog"></i><span>Administrar|Personas</span></a>
       </li>
 
       <li *ngIf ="sesionIniciada">
@@ -23,7 +23,7 @@
       </li>
 
       <li *ngIf ="sesionIniciada">
-        <a routerLink="/seguridad/cambioclave" class="nav-link scrollto" id="buttonLogin"><i class="bx bx-detail"></i><span>Cambiar clave</span></a>
+        <a routerLink="/seguridad/cambiar-clave" class="nav-link scrollto" id="buttonLogin"><i class="bx bx-detail"></i><span>Cambiar clave</span></a>
       </li>
 
       <li *ngIf ="sesionIniciada">
