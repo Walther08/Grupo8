@@ -10,6 +10,8 @@ import { ProductoService } from 'src/app/servicios/producto.service';
 export class BuscarProductoComponent implements OnInit {
 
   ListaProductos:ModeloProducto[]=[];
+  TextoDeInputBuscar: string = "";
+
   constructor(private servicioProducto: ProductoService) { }
 
   ngOnInit(): void {
@@ -18,8 +20,14 @@ export class BuscarProductoComponent implements OnInit {
   
   ObtenerListadoProductos(){
     this.servicioProducto.ObtenerRegistros().subscribe((datos:ModeloProducto[])=>{
-      this.ListaProductos= datos;
-
+      if(this.TextoDeInputBuscar.trim()==="")
+        this.ListaProductos= datos;
+      else
+        this.ListaProductos= datos.filter(p => p.nombre?.includes(this.TextoDeInputBuscar));
     })
+  }
+  
+  Buscar(){
+    this.ObtenerListadoProductos();
   }
 }

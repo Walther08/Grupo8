@@ -1,3 +1,156 @@
 .imagenproducto{
     width:100px;
 }
+
+.search {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 5px
+}
+
+.search-1 {
+    position: relative;
+    width: 100%
+}
+
+.search-1 input {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 34px;
+    padding-right: 10px;
+    border-right: 2px solid #eee
+}
+
+.search-1 input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none
+}
+
+.search-1 i {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: 24px;
+    color: #eee
+}
+
+::placeholder {
+    color: #eee;
+    opacity: 1
+}
+
+.search-2 {
+    position: relative;
+    width: 100%
+}
+
+.search-2 input {
+    height: 45px;
+    border: none;
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 100px
+}
+
+.search-2 input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none
+}
+
+.search-2 i {
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    font-size: 24px;
+    color: #eee
+}
+
+.search-2 button {
+    position: absolute;
+    right: 1px;
+    top: 0px;
+    border: none;
+    height: 45px;
+    background-color: rgb(61, 88, 240);
+    color: #fff;
+    width: 90px;
+    border-radius: 4px
+}
+
+@media (max-width:800px) {
+    .search-1 input {
+        border-right: none;
+        border-bottom: 1px solid #eee
+    }
+
+    .search-2 i {
+        left: 4px
+    }
+
+    .search-2 input {
+        padding-left: 34px
+    }
+
+    .search-2 button {
+        height: 37px;
+        top: 5px
+    }
+}
+
+table {
+	border: 1px solid rgb(200, 200, 200);
+	border-collapse: collapse;
+	font-size: .9rem;
+	width: 80%;
+    height: 300px;
+}
+
+tr {
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background: rgb(225, 225, 225);
+}
+
+th {
+	background: rgb(248, 227, 174);
+	border: 1px solid rgb(160, 160, 160);
+	color: rgb(255, 255, 255);
+	padding: .8rem;
+}
+
+td {
+	border: 1px solid rgb(160, 160, 160);
+	padding: .8rem;
+}
+
+table tr:hover {
+	background: rgb(255, 235, 185);
+}
+
+.table-container {
+	margin: 0 0 1rem;
+	overflow: auto;
+	overflow-y: auto;
+	width: 100%;
+    height: 300px;
+}
+
+
+/*  Estilos para que las barras de desplazamiento horizontal se vean en los dispositivos IOS */
+
+.table-container::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, .3);
+	border-radius: 8px;
+	border: 3px solid #fff;
+}

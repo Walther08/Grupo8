@@ -1,29 +1,45 @@
-<div class="container">
+<section id="hero" class="d-flex flex-column justify-content-center">
 
-
-    <table class="table responsive">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Imagen</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
-
-        </thead>
-        <tbody>
-            <tr *ngFor="let p of ListaProductos">
-                <td>{{p.nombre}}</td>
-                <td>{{p.precio}}</td>
-                <td><img src="{{p.imagen}}" class="imagenproducto" /></td>
-
-                <td><a routerLink="/administracion/editar-producto/{{p.id}}" class="btn btn-warning">Editar</a></td>
-                <td><a routerLink="/administracion/eliminar-producto/{{p.id}}" class="btn btn-danger">Eliminar</a></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-
-    <a routerLink="/administracion/crear-producto" class="btn btn-primary">Crear Producto</a>
-</div>
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Administración - Productos</h1>
+        <div class="social-links">
+            <a routerLink="/administracion/crear-producto"><i class='bx bx-plus-medical'></i>Nuevo Producto</a>
+        </div>
+          <br>
+          <br>
+          <div class="search">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="search-1"> <i class='bx bx-search-alt'></i> <input [(ngModel)]='TextoDeInputBuscar' type="text" placeholder="Buscar Producto"> 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="search-2"> <button (click)="Buscar()">Buscar</button></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <table class="table responsive">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+    
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of ListaProductos">
+                    <td>{{p.nombre}}</td>
+                    <td>{{p.precio}}</td>
+                    <td><img src="{{p.imagen}}" class="imagenproducto" /></td>
+    
+                    <td><a routerLink="/administracion/editar-producto/{{p.id}}"><i class='bx bx-edit-alt'></i>Editar</a></td>
+                    <td><a routerLink="/administracion/eliminar-producto/{{p.id}}"><i class='bx bx-trash'></i>Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
