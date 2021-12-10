@@ -13,17 +13,13 @@ body {
 }
 .bg_loginIzquierda{
 
-    border: solid;
-    border-radius: 1%;
     width: 600px;
     height: 600px;
 }
 .bg_loginDerecha{
-    border: solid;
-    color: cornflowerblue;
-    border-radius: 1%;
+
     width: 600px;
-    height: 600px;
+    /* height: px; */
 }
 .imgLogin{
     width: 550px;
@@ -31,7 +27,7 @@ body {
 }
 .boton_ingresar{
     width:50%; 
-    background-color: #007bff;
+    background-color: #007bff27;
     height: 40px;
     text-align: center;
 }

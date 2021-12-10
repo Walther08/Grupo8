@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './plantilla/error/error.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
+import { ContactoComponent } from './plantilla/contacto/contacto.component';
+import { PorfatolioComponent } from './plantilla/porfatolio/porfatolio.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,16 @@ const routes: Routes = [
   {
     path:"**",
     component:ErrorComponent
+
+  },
+  {
+    path:"contacto",
+    component:ContactoComponent
+
+  },
+  {
+    path:"portafolio",
+    component:PorfatolioComponent
 
   }
 
