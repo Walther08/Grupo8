@@ -10,6 +10,7 @@ import { AdministracionService } from 'src/app/servicios/administracion.service'
 export class BuscarPersonaComponent implements OnInit {
 
   ListaPersonas:ModeloPersona[] = [];
+  TextoDeInputBuscar: string = "";
 
   constructor(private servicioAdministracion:AdministracionService) { }
 
@@ -19,8 +20,17 @@ export class BuscarPersonaComponent implements OnInit {
 
   ObtenerListadoPersonas(){
     this.servicioAdministracion.ObtenerRegistrosPersona().subscribe((datos:ModeloPersona[])=>{
-      this.ListaPersonas = datos;
+      if(this.TextoDeInputBuscar.trim()==="")
+        this.ListaPersonas = datos;
+      else
+        this.ListaPersonas = datos.filter(p => p.nombres?.includes(this.TextoDeInputBuscar)
+                              || p.apellidos?.includes(this.TextoDeInputBuscar)
+                              || p.correo?.includes(this.TextoDeInputBuscar));
     })
+  }
+
+  Buscar(){
+      this.ObtenerListadoPersonas();
   }
 
 }
