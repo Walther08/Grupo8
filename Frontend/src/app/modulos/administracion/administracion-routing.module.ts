@@ -8,6 +8,7 @@ import { BuscarProductoComponent } from './productos/buscar-producto/buscar-prod
 import { CrearProductoComponent } from './productos/crear-producto/crear-producto.component';
 import { EditarProductoComponent } from './productos/editar-producto/editar-producto.component';
 import { EliminarProductoComponent } from './productos/eliminar-producto/eliminar-producto.component';
+import { AsignarPedidoComponent } from '../pedidos/asignar-pedido/asignar-pedido.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
     path:"eliminar-producto/:id",
     component: EliminarProductoComponent
   },
+  {
+    path:"pedidos",
+    component: AsignarPedidoComponent
+  }
 ];
 
 @NgModule({

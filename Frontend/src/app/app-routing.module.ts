@@ -38,12 +38,10 @@ const routes: Routes = [
   {
     path:"contacto",
     component:ContactoComponent
-
   },
   {
     path:"portafolio",
     component:PorfatolioComponent
-
   }
 
 ];
