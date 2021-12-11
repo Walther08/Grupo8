@@ -36,6 +36,10 @@ const routes: Routes = [
     component: EliminarPersonaComponent
   },
   {
+    path:"buscar-persona",
+    component: BuscarPersonaComponent
+  },
+  {
     path:"buscar-producto",
     component: BuscarProductoComponent
   },
